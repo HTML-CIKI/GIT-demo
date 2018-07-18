@@ -36,6 +36,13 @@ $ git merge
 > 5、切分之开发
 
 ```bash
-$ git checkout -b branchname
+$ git checkout -b '分支名字'
+# 写完分支后提交完成后，切换到master分之后先update然后在合并到master分之
+
+$ git checkout master #切换到主分支
+$ git fetch origin #更新仓库代码
+$ git merge # 合并更新代码到本地仓库
+$ git merge '分支名' # 合并分之代码到master分之
+# 保存代码后 提交远程仓库
 
 ```
