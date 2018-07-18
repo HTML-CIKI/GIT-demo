@@ -54,7 +54,6 @@ $ git merge '分支名' # 合并分之代码到master分之
 ```
 
 > 7、发布版本 git tag
-
 ``` bach
 
 #创建轻量标签
