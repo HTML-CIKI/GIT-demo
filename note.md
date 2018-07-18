@@ -17,13 +17,15 @@ git branch
 // 切换分支
 git checkout master
 
-
+git checkout wss
 git add .
 git commit -m "master 提交"
 git checkout master
-git fetch origin
+git fetch origin   git pull
 git merge
 git merge wss
+
+
 git add .
 git commit -m "master 提交"
 git push
