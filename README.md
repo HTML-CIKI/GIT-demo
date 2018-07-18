@@ -21,6 +21,7 @@
 ```
 
 > 4、提取服务器上的更新
+
 ```bash
 #  默认取回所有的更新。
 $ git fetch origin
@@ -29,5 +30,12 @@ $ git fetch origin
 $ git fetch origin branch1
 
 # 此时代码还没有和本地合并,使用git merge合并
-$ git merge 
+$ git merge
+```
+
+> 5、切分之开发
+
+```bash
+$ git checkout -b branchname
+
 ```
