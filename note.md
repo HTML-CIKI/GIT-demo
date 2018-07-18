@@ -10,3 +10,20 @@ git commit -m "master 提交"
 
 git push
 
+
+
+// 查看分支
+git branch
+// 切换分支
+git checkout master
+
+
+git add .
+git commit -m "master 提交"
+git checkout master
+git fetch origin
+git merge
+git merge wss
+git add .
+git commit -m "master 提交"
+git push
