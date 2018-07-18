@@ -50,4 +50,5 @@ $ git merge '分支名' # 合并分之代码到master分之
 > 6、git rebase合并
 
 ```bash
+  git checkout -b "分支名" # 首先切分之
 ```
