@@ -31,6 +31,10 @@ $ git fetch origin branch1
 
 # 此时代码还没有和本地合并,使用git merge合并
 $ git merge
+
+# 或者直接Git pull 从远程拉取代码
+
+$ git pull
 ```
 
 > 5、切分之开发合并
@@ -54,28 +58,35 @@ $ git merge '分支名' # 合并分之代码到master分之
 ```
 
 > 7、发布版本 git tag
-``` bach
 
-#创建轻量标签
-$ git tag v0.2.0 -light
-
-#解释：创建轻量标签不需要传递参数，直接指定标签名称即可。
-
-#创建附注标签
-$ git tag -a v0.1.0 -m "release 0.1.0 version"    
-
-# 解释：创建附注标签时，参数-a即annotated的缩写，指定标签类型，后附标签名。参数m指定标签说明，说明信息会保存在标签对象中。
+``` bash
+  # 创建轻量标签
+  git tag v0.2.0 -light # 解释：创建轻量标签不需要传递参数，直接指定标签名称即可。
 
 
-# 列出当前仓库的所有标签
+  #创建附注标签
+  $ git tag -a v0.1.0 -m "release 0.1.0 version"    
 
-$ git tag
+  # 解释：创建附注标签时，参数-a即annotated的缩写，指定标签类型，后附标签名。参数m指定标签说明，说明信息会保存在标签对象中。
 
-# 列出符合模式的标签
 
-$ git tag -l 'v0.1.*'
+  # 列出当前仓库的所有标签
 
-# 查看标签版本信息
+  $ git tag
 
-$ git show v0.1.0
+  # 列出符合模式的标签
+
+  $ git tag -l 'v0.1.*'
+
+  # 查看标签版本信息
+
+  $ git show v0.1.0
+```
+
+> 8、退回版本
+
+```bash
+  $ git log # 查看提交日志
+  
+  $ git reset --hard '版本号'
 ```
