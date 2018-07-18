@@ -1,4 +1,4 @@
-# GIT 命令行测试
+# GIT 团队开发命令行测试
 
 > 1、git init 初始化
 
@@ -16,6 +16,6 @@
 > 3、新建远程仓库并且提交
 
 ```bash
-  git remote add origin https://github.com/leizp/GIT-demo.git
+  git remote add origin https://github.com/HTML-CIKI/GIT-demo.git
   git push -u origin master
 ```
