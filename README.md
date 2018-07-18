@@ -19,3 +19,15 @@
   git remote add origin https://github.com/HTML-CIKI/GIT-demo.git
   git push -u origin master
 ```
+
+> 4、提取服务器上的更新
+```bash
+#  默认取回所有的更新。
+$ git fetch origin
+
+# 取回某一个分支的更新,branch1是分支名,可以是master或者其他的。
+$ git fetch origin branch1
+
+# 此时代码还没有和本地合并,使用git merge合并
+$ git merge 
+```
