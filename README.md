@@ -33,7 +33,7 @@ $ git fetch origin branch1
 $ git merge
 ```
 
-> 5、切分之开发
+> 5、切分之开发合并
 
 ```bash
 $ git checkout -b '分支名字'
@@ -45,4 +45,10 @@ $ git merge # 合并更新代码到本地仓库
 $ git merge '分支名' # 合并分之代码到master分之
 # 保存代码后 提交远程仓库
 
+```
+
+> 6、git rebase合并
+
+```bash
+  git checkout -b "分支名" # 首先切分之
 ```
