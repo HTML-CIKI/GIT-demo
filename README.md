@@ -47,8 +47,36 @@ $ git merge '分支名' # 合并分之代码到master分之
 
 ```
 
-> 6、git rebase合并
+> 6、git rebase合并 --> 后续在增加
 
 ```bash
   git checkout -b "分支名" # 首先切分之
+```
+
+> 7、发布版本 git tag
+
+``` bach
+
+#创建轻量标签
+$ git tag v0.2.0 -light
+
+#解释：创建轻量标签不需要传递参数，直接指定标签名称即可。
+
+#创建附注标签
+$ git tag -a v0.1.0 -m "release 0.1.0 version"    
+
+# 解释：创建附注标签时，参数-a即annotated的缩写，指定标签类型，后附标签名。参数m指定标签说明，说明信息会保存在标签对象中。
+
+
+# 列出当前仓库的所有标签
+
+$ git tag
+
+# 列出符合模式的标签
+
+$ git tag -l 'v0.1.*'
+
+# 查看标签版本信息
+
+$ git show v0.1.0
 ```
