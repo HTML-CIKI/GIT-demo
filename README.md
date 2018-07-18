@@ -81,6 +81,10 @@ $ git merge '分支名' # 合并分之代码到master分之
   # 查看标签版本信息
 
   $ git show v0.1.0
+
+  # 查看版本代码
+
+  $ git checkout v1.0.0
 ```
 
 > 8、退回版本
