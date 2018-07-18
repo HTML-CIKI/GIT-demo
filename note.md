@@ -6,7 +6,7 @@ git status
 
 git add
 
-git commit 
+git commit -m "master 提交"
 
 git push
 
